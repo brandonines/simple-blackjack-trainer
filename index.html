@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Blackjack Trainer</title>
+</head>
+<body>
+    <section id="game-display">
+        <div class="hands-container">
+            <h2>Dealer Hand</h2>
+            <div class="hand">
+                <div id="message">
+                    Hit "Deal" to begin.
+                </div>  
+                <div id="dealer-hand" class="card"></div>
+                <div class="card card-back"></div>
+            </div>
+            <h2>Player Hand</h2> 
+            <div class="hand">
+                <div id="player-hand-one" class="card"></div>
+                <div id="player-hand-two" class="card"></div>
+            </div> 
+        </div>
+    </section>
+    
+    <section id="player-interaction">
+        <div class="interaction-container">
+            <input type="button" id="deal" class="button" value="Deal"> 
+        </div>
+    
+        <div class="interaction-container">
+            <input type="button" id="hit" class="button" value="Hit">
+            <input type="button" id="stand" class="button" value="Stand">
+            <input type="button" id="double-down" class="button" value="Double Down">
+            <input type="button" id="split" class="button" value="Split">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
